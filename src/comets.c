@@ -4010,13 +4010,13 @@ wchar_t* convert_formula_to_sentence(char *formula_string)
 	while(temp != NULL)
 	{
 		if (wcscmp(temp,L"+") == 0)
-			wcscat(sentence,_(L"plus "));
+                        wcscat(sentence,(const wchar_t *)_("plus "));
 		else if (wcscmp(temp,L"-") == 0)
-			wcscat(sentence,_(L"minus "));
+			wcscat(sentence,(const wchar_t *)_("minus "));
 		else if (wcscmp(temp,L"÷") == 0)
-			wcscat(sentence,_(L"divided by "));
+			wcscat(sentence,(const wchar_t *)_("divided by "));
 		else if (wcscmp(temp,L"x") == 0)
-			wcscat(sentence,_(L"Times "));
+			wcscat(sentence,(const wchar_t *)_("Times "));
 		else
 			{
 				wcscat(sentence,temp);

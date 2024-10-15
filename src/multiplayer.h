@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #ifndef MULTIPLAYER_H
 #define MULTIPLAYER_H
 
-
+#include "comets.h"
 #define MAX_PLAYERS 4
 
 enum {

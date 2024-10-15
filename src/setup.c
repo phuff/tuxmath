@@ -37,7 +37,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #include "titlescreen.h"
 #include "highscore.h"
 #include "mysetenv.h"
-
+#include "config.h"
 
 /* SDL includes: -----------------*/
 #include "SDL.h"

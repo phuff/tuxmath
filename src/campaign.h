@@ -25,7 +25,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.  */
 
 
 #include "tuxmath.h"
-
+#include "comets.h"
 //#define TESTING_CAMPAIGN //allow ESC to skip missions instead of exiting
 
 #define NUM_STAGES 5 

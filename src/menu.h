@@ -34,7 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #ifndef MENU_H
 #define MENU_H
-
+#include "comets.h"
 #include "globals.h"
 
 #include "SDL.h"

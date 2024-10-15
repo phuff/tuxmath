@@ -34,6 +34,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define NETWORK_H
 
 #include "config.h"
+#include "globals.h"
 
 #ifdef HAVE_LIBSDL_NET
 

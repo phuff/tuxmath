@@ -7,6 +7,9 @@
 
 #include "comets.h"
 
+#include "draw_utils.h"
+
+#include "network.h"
 
 void comets_draw_background(SDL_Surface *bkgd, int wave);
 

@@ -3,7 +3,7 @@
 #include "draw_utils.h"
 #include "tuxmath.h"
 #include "fileops.h"
-
+#include <math.h>
 
 float get_scale(void)
 {

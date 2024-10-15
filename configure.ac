@@ -2,7 +2,7 @@
 # Process this file with autoconf to produce a configure script.
 AC_INIT([Tux Of Math Command],[2.0.4],[tuxmath-devel@lists.sourceforge.net],[tuxmath])
 
-AC_PREREQ(2.61)
+AC_PREREQ([2.72])
 AC_CANONICAL_HOST
 AC_CANONICAL_BUILD
 AC_CANONICAL_TARGET
@@ -18,7 +18,7 @@ AC_DEFINE_UNQUOTED([PROGRAM_NAME], "$PACKAGE", [Tux Of Math Command])
 
 AC_SUBST(NAME_VERSION)
 
-AC_GNU_SOURCE
+AC_USE_SYSTEM_EXTENSIONS
 
 dnl For libtool support to link libt4k-common:
 dnl NOTE - currently libtool init commented out because of errors in crossbuild.
@@ -225,7 +225,15 @@ LIBS="$LIBS $T4K_COMMON_LIBS"
 
 AC_FUNC_ALLOCA
 AC_HEADER_DIRENT
-AC_HEADER_STDC
+m4_warn([obsolete],
+[The preprocessor macro 'STDC_HEADERS' is obsolete.
+  Except in unusual embedded environments, you can safely include all
+  C89 headers unconditionally.])dnl
+# Autoupdate added the next two lines to ensure that your configure
+# script's behavior did not change.  They are probably safe to remove.
+AC_CHECK_INCLUDES_DEFAULT
+AC_PROG_EGREP
+
 AC_CHECK_HEADERS([argz.h error.h errno.h fcntl.h float.h iconv.h inttypes.h langinfo.h libgen.h libintl.h limits.h locale.h malloc.h math.h pthread.h stddef.h stdint.h stdio_ext.h stdlib.h string.h strings.h sys/param.h unistd.h wchar.h])
 
 
